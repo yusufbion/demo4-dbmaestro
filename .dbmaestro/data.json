@@ -5,7 +5,26 @@
         "ProjectId": "c0d3b0df-916b-4380-8c45-2ce6f91858ad",
         "ProjectName": "dev",
         "DBTypeName": "Oracle",
-        "Environments": null,
+        "Environments": [
+          {
+            "EnvironmentId": "9224ec0c-779c-4605-a78f-8edab5d981ad",
+            "EnvironmentName": "Dev_Env_1",
+            "EnvironmentType": "DEV",
+            "Databases": [
+              {
+                "DatabaseId": "e0af4a25-3a82-430a-bada-388626864457",
+                "DatabaseAliasName": "dev1",
+                "DatabaseConnectionDetails": null,
+                "RepositoryDetails": {
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
+                  "RemoteRepositoryURL": "https://github.com/yusufbion/demo4-sb-dev1.git",
+                  "RemoteBranchName": "main",
+                  "LocalBranchName": "main"
+                }
+              }
+            ]
+          }
+        ],
         "SourceControlPathType": 0,
         "Configuration": {
           "BuildMigrationScriptAutomatically": true,
@@ -21,7 +40,31 @@
       "UserData": [
         {
           "UserName": "user1",
-          "DatabasesData": []
+          "DatabasesData": [
+            {
+              "DatabaseId": "e0af4a25-3a82-430a-bada-388626864457",
+              "DatabaseAliasName": "dev1",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "Oracle",
+                    "host": "172.31.88.65",
+                    "port": "1521",
+                    "identifierType": "SERVICE_NAME",
+                    "identifier": "ORCLPDB",
+                    "userName": "DEMO4_SB_DEV1",
+                    "Password": "7//TtGu6ICevnElKqvkVnHFtDOHH6rAno5xhfmKjdQE="
+                  }
+                }
+              ],
+              "RepositoryCredentials": {
+                "UserName": "yusufbion",
+                "Password": "ImYwW3GtDc+qS5jasB1z9tu8fs6VEb0kfV32yTvVMkuNOODE2FCEHfbz0EgPFPLL"
+              }
+            }
+          ]
         }
       ],
       "DatabasesStaticDataObjects": null

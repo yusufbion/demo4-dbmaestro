@@ -65,6 +65,34 @@
               }
             }
           ]
+        },
+        {
+          "UserName": "OS",
+          "DatabasesData": [
+            {
+              "DatabaseId": "e0af4a25-3a82-430a-bada-388626864457",
+              "DatabaseAliasName": "dev1",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "Oracle",
+                    "host": "172.31.88.65",
+                    "port": "1521",
+                    "identifierType": "SERVICE_NAME",
+                    "identifier": "ORCLPDB",
+                    "userName": "DEMO4_OS",
+                    "Password": "7//TtGu6ICevnElKqvkVnHFtDOHH6rAno5xhfmKjdQE="
+                  }
+                }
+              ],
+              "RepositoryCredentials": {
+                "UserName": "OS",
+                "Password": "ImYwW3GtDc+qS5jasB1z9tu8fs6VEb0kfV32yTvVMkuNOODE2FCEHfbz0EgPFPLL"
+              }
+            }
+          ]
         }
       ],
       "DatabasesStaticDataObjects": null
